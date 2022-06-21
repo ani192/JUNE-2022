@@ -1,0 +1,75 @@
+/* Header */
+
+#mainheader {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mainnav {
+    background-color: brown;
+    height: 100px;
+}
+
+.Logo {
+    width: 15%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    float: left;
+}
+
+.menuwrap {
+    width: 85%;
+    float: left;
+}
+
+.menu {
+    padding-right: 25px;
+    float: right;
+}
+
+li {
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 100px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Content starts */
+
+#home {
+    height: 150vh;
+    background-color: rgb(33,73,115);
+    color: #fff;
+    text-align: center;
+}
+
+#about {
+    height: 150vh;
+    background-color: rgb(94, 193, 160);
+    color: #fff;
+    text-align: center;
+}
+
+#gallery {
+    height: 150vh;
+    background-color: rgb(13, 243, 243);
+    color: #fff;
+    text-align: center;
+}
+
+#contact {
+    height: 150vh;
+    background-color: cadetblue;
+    color: #fff;
+    text-align: center;
+}
+.maincontent {
+    padding-top: 100px;
+}

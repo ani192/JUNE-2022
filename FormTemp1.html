@@ -6,83 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        body{
+            background-color: aqua;
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            padding: 0px;
+            
+        }
+        .row{
+            width: 30%;
+            height: 70vh;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            border-color: rgb(165, 202, 234);
+        }
+        select{
+            padding: 5px;
+            width: 450px;
+        }
+        .group{
+            width: 30%;
+            height: 70vh;
+            background-color: rgb(61, 61, 220);
+            padding: 10px;
+            border-radius: 5px;
+            border-color: rgb(165, 202, 234);
+        }
+        .company, .business, .zipcode, .street, .additional, .zip, .your_email{
+            width: 440px;
+            padding: 5px;
+        }
+        .test{
+            text-align: justify;
+        }
+        .text{
+            color: #fff;
+        }
+        button{
+            color: black;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 10px 20px;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
     <div class="content">
-        <h2>General Information</h2>
         <div class="row">
+            <h2>General Information</h2>
             <select name="Title">
                 <option class="option" value="title">Title</option>
                 <option class="option" value="businessman">BusinessMan</option>
                 <option class="option" value="reporter">Reporter</option>
                 <option class="option" value="secretary">Secretary</option>
             </select>
-            <div>
+            <p>
                 <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
                 <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
-            </div>
-            <div>
+            </p>
+            <p>
                 <select name="position">
                     <option value="position">Position</option>
                     <option value="director">Director</option>
                     <option value="manager">Manager</option>
                     <option value="employee">Employee</option>
                 </select>
-            </div>
-            <div>
+            </p>
+            <p class="test">
                 <input type="text" name="company" class="company" id="company" placeholder="Company" required>
-            </div>
-            <div>
+            </p>
+            <p class="test">
                 <input type="text" name="business" id="business" class="business" placeholder="Business Arena" required>
+            </p>
+            <p>
                 <select name="employees">
                     <option value="employees">Employees</option>
                     <option value="trainee">Trainee</option>
                     <option value="colleague">Colleague</option>
                     <option value="associate">Associate</option>
                 </select>
-            </div>
+            </p>
         </div>
         <div class="group">
             <h2>Contact Details</h2>
-            <div>
+            <p class="test">
                 <input type="text" name="street" id="street" class="street" placeholder="Street + Nr" required>
-            </div>
-            <div>
+            </p>
+            <p class="test">
                 <input type="text" name="additional" id="additional" class="additional" placeholder="Additional Information" required>
-            </div>
-            <div>
+            </p>
+            <p class="test">
                 <input type="text" name="zip" id="zip" class="zip" placeholder="Zip Code" required>
+            </p>
+            <p>
                 <select name="place">
                     <option value="place">Place</option>
                     <option value="street">Street</option>
                     <option value="district">District</option>
                     <option value="city">City</option>
                 </select>
-            </div>
-            <div>
+            </p>
+            <p>
                 <select name="country">
                     <option value="country">Country</option>
                     <option value="India">India</option>
                     <option value="US">US</option>
                     <option value="Australia">Australia</option>
                 </select>
-            </div>
-            <div>
-                <input type="text" name="code" id="code" class="code" placeholder="Code +" required>
-                <input type="text" name="phone" id="phone" class="phone" placeholder="Phone Number" required>
-            </div>
-            <div>
+            </p>
+            <p class="test">
+                <input type="text" name="code" id="code" placeholder="Code +" required>
+                <input type="text" name="phone" id="phone"  placeholder="Phone Number" required>
+            </p>
+            <p>
                 <input type="text" name="your_email" id="your_email" class="your_email" placeholder="Your Email" required>
-            </div>
-            <div>
-                
-                <p>
-                    <input type="radio" name="radio">
-                    I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.
-                </p>
-            </div>
+            </p>
+            <p>
+                <input type="radio" name="radio">
+                I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.
+            </p>
+            <p>
+                <button type="button">Registration Badge</button>
+            </p>
         </div>
     </div> 
 </body>
